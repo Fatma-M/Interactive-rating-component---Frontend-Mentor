@@ -1,0 +1,124 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+$semi-transparent: rgba(
+  $color: $medium-grey,
+  $alpha: 0.1,
+);
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: $very-dark-blue;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 350px;
+  background-color: $dark-blue;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.title {
+  color: $white;
+}
+
+.text {
+  color: $medium-grey;
+}
+
+#rating-state {
+  .star-icon {
+    background-color: $semi-transparent;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+
+    .rate {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $semi-transparent;
+      color: $light-grey;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+
+      &:hover {
+        color: $white;
+        background-color: $orange;
+      }
+
+      &.selected {
+        background-color: $light-grey;
+        color: $white;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    outline: none;
+    border: 0;
+    background-color: $orange;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      color: $orange;
+    }
+  }
+}
+
+#thank-you-state {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  #chosen-rate {
+    margin: 25px 0;
+    background-color: $semi-transparent;
+    color: $orange;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+
+  h1 {
+    margin: 2px;
+  }
+}

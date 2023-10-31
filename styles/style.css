@@ -1,0 +1,103 @@
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 350px;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+}
+
+.text {
+  color: hsl(216, 12%, 54%);
+}
+
+#rating-state .star-icon {
+  background-color: rgba(124, 135, 152, 0.1);
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#rating-state .rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+#rating-state .rating-container .rate {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(124, 135, 152, 0.1);
+  color: hsl(217, 12%, 63%);
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+#rating-state .rating-container .rate:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+#rating-state .rating-container .rate.selected {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+#rating-state button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  outline: none;
+  border: 0;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  font-size: 16px;
+}
+#rating-state button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+#thank-you-state {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#thank-you-state #chosen-rate {
+  margin: 25px 0;
+  background-color: rgba(124, 135, 152, 0.1);
+  color: hsl(25, 97%, 53%);
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+#thank-you-state h1 {
+  margin: 2px;
+}/*# sourceMappingURL=style.css.map */
