@@ -1,7 +1,8 @@
 ### Links
 
 - Solution URL:
-  [https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI]
+  [https://www.frontendmentor.io/solutions/interactive-rating-component-ZCpHQMnbQY]
+- Live URL: [https://luxury-kangaroo-cdfd5a.netlify.app/]
 
 ### The challenge
 
